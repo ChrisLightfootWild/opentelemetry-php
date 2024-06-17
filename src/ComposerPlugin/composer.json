@@ -1,0 +1,36 @@
+{
+    "name": "open-telemetry/composer-plugin",
+    "description": "Composer plugin for OpenTelemetry PHP.",
+    "keywords": ["opentelemetry", "otel", "metrics", "tracing", "logging", "apm", "api"],
+    "type": "composer-plugin",
+    "support": {
+        "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
+        "source": "https://github.com/open-telemetry/opentelemetry-php",
+        "docs": "https://opentelemetry.io/docs/php",
+        "chat": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V"
+    },
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "opentelemetry-php contributors",
+            "homepage": "https://github.com/open-telemetry/opentelemetry-php/graphs/contributors"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "composer-plugin-api": "^2.0",
+        "tbachert/spi": "^0.2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenTelemetry\\ComposerPlugin\\": "."
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.x-dev"
+        },
+        "class": "OpenTelemetry\\ComposerPlugin\\Plugin",
+        "plugin-optional": true
+    }
+}
