@@ -14,7 +14,7 @@ use OpenTelemetry\SDK\Common\InstrumentationScope\Configurator;
 class Tracer implements API\TracerInterface
 {
     public const FALLBACK_SPAN_NAME = 'empty';
-    private Config $config;
+    protected Config $config;
 
     public function __construct(
         private readonly TracerSharedState $tracerSharedState,
